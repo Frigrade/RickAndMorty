@@ -4,5 +4,5 @@
 4. Для взаимодействия между ViewModel и View используется реактивный подход, в качестве observable
    была выбрана LivaData. <br>
 5. Используется single Activity подход, навигация между фрагментами реализуется при помощи
-   Navigation component. <br>
+   Navigation component. <br><br>
 ![RM](https://user-images.githubusercontent.com/19384936/163685896-0e778833-6334-4cfd-8828-7370213431c4.png)
