@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/news_nav_graph"
+    app:startDestination="@id/allCharactersFragment">
+
+    <fragment
+        android:id="@+id/allCharactersFragment"
+        android:name="com.rickAndMorty.ui.fragments.AllCharactersFragment"
+        android:label="BreakingNewsFragment">
+        <action
+            android:id="@+id/action_allCharactersFragment_to_characterBioFragment"
+            app:destination="@id/characterBioFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/characterBioFragment"
+        android:name="com.rickAndMorty.ui.fragments.CharacterBioFragment"
+        android:label="CharacterBioFragment">
+        <argument
+            android:name="character"
+            app:argType="com.rickAndMorty.domain.entity.Character" />
+    </fragment>
+
+</navigation>

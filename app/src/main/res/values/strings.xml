@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">RickAndMorty</string>
+
+    <plurals name="pluralEpisode">
+        <item quantity="one">%1$s was seen in %2$d episode</item>
+        <item quantity="other">%1$s was seen in %2$d episodes</item>
+    </plurals>
+
+    <string name="characterName">Name: %1$s</string>
+    <string name="characterSpecies">Species: %1$s</string>
+    <string name="characterGender">Gender: %1$s</string>
+    <string name="characterStatus">Status: %1$s</string>
+    <string name="characterLocation">Location: %1$s</string>
+</resources>
