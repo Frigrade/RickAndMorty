@@ -21,10 +21,10 @@ class AllCharactersFragment : BaseFragment(R.layout.fragment_all_characters) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewModelAll = (activity as CharactersActivity).viewModelAll
-        paginationScrollListener = PaginationScrollListener(viewModelAll::getCharacter)
+        viewModel = (activity as CharactersActivity).viewModel
+        paginationScrollListener = PaginationScrollListener(viewModel::getCharacter)
         setupRecyclerView()
-        viewModelAll.characterLiveData.observe(viewLifecycleOwner) { state ->
+        viewModel.characterLiveData.observe(viewLifecycleOwner) { state ->
             renderContent(state)
         }
     }
@@ -62,7 +62,7 @@ class AllCharactersFragment : BaseFragment(R.layout.fragment_all_characters) {
 
     private fun updatePaginationListener(state: CharactersState.Content) {
         val totalPages = state.data.info.count / QUERY_PAGE_SIZE + 2
-        paginationScrollListener.isLastPage = viewModelAll.characterPage == totalPages
+        paginationScrollListener.isLastPage = viewModel.characterPage == totalPages
         if (paginationScrollListener.isLastPage) {
             rvAllCharacters.setPadding(0, 0, 0, 0)
         }

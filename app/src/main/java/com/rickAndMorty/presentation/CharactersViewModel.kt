@@ -11,7 +11,7 @@ import retrofit2.Response
 import javax.inject.Inject
 
 
-class AllCharactersViewModel @Inject constructor(
+class CharactersViewModel @Inject constructor(
     private val characterRepository: CharacterRepository,
 ) : ViewModel() {
     val characterLiveData: MutableLiveData<CharactersState> = MutableLiveData()

@@ -1,15 +1,8 @@
 package com.rickAndMorty.domain.entity
 
-import androidx.room.Entity
-import androidx.room.PrimaryKey
 import java.io.Serializable
 
-@Entity(
-    tableName = "characters"
-)
-
 data class Character(
-    @PrimaryKey(autoGenerate = true)
     val id: Int,
     val created: String,
     val episode: List<Any>,

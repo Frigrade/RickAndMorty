@@ -10,6 +10,6 @@ class CharactersViewModelProviderFactory @Inject constructor(
 ) : ViewModelProvider.Factory {
 
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        return AllCharactersViewModel(characterRepository) as T
+        return CharactersViewModel(characterRepository) as T
     }
 }
