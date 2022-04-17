@@ -1,5 +1,5 @@
 1. Приложение было написанно с использованием API https://rickandmortyapi.com/ <br>
-2. Использованный стэк технологий: Dagger2, OkHttp, Retrofit, Kotlin coroutines, Glide <br>
+2. Использованный стек технологий: Dagger2, OkHttp, Retrofit, Kotlin coroutines, Glide <br>
 3. Приложение написано с использованием архитектуры MVVM. <br>
 4. Для взаимодействия между ViewModel и View используется реактивный подход, в качестве observable
    была выбрана LivaData. <br>
