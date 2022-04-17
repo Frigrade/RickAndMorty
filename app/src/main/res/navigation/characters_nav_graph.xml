@@ -7,10 +7,14 @@
     <fragment
         android:id="@+id/allCharactersFragment"
         android:name="com.rickAndMorty.ui.fragments.AllCharactersFragment"
-        android:label="BreakingNewsFragment">
+        android:label="AllCharactersFragment">
         <action
             android:id="@+id/action_allCharactersFragment_to_characterBioFragment"
-            app:destination="@id/characterBioFragment" />
+            app:destination="@id/characterBioFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_left" />
     </fragment>
 
     <fragment
